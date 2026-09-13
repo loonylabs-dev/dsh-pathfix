@@ -6,7 +6,7 @@
 
 <!-- Horizontal Badge Navigation Bar -->
 [![npm version](https://img.shields.io/npm/v/dsh-pathfix.svg?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/package/dsh-pathfix)
-[![CI](https://github.com/loonylabs-dev/dsh-pathfix/actions/workflows/tests.yml/badge.svg?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/loonylabs-dev/dsh-pathfix/actions)
+[![CI](https://github.com/loonylabs-dev/dsh-pathfix/actions/workflows/tests.yml/badge.svg?branch=master&style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/loonylabs-dev/dsh-pathfix/actions)
 [![Node.js](https://img.shields.io/badge/Node.js-22+-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge&logo=opensource&logoColor=white)](#license)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/loonylabs-dev/dsh-pathfix)
