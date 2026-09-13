@@ -1,0 +1,48 @@
+name: Tool Whitespace Failure Report
+description: Report an unhandled tool whitespace error signature or parameter format defect
+labels: ["defect"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please report concrete, reproducible failure signatures where model-emitted whitespace or newlines cause tool execution failures.
+  - type: input
+    id: tool_name
+    attributes:
+      label: Tool Name
+      description: Which tool failed? (e.g. read, write, edit, glob, grep, or custom tool)
+      placeholder: e.g. read_image
+    validations:
+      required: true
+  - type: input
+    id: param_name
+    attributes:
+      label: Parameter Name
+      description: Which parameter carried the unhandled whitespace or newline?
+      placeholder: e.g. file_path, path, pattern
+    validations:
+      required: true
+  - type: textarea
+    id: raw_arg
+    attributes:
+      label: Raw Emitted Argument
+      description: The exact JSON string or argument value emitted by the model, including exact whitespace (\n, \r, \t).
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: observed_error
+    attributes:
+      label: Observed Error Signature
+      description: The exact error output or failure message returned without dsh-pathfix.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: DSH Environment & Version
+      description: DSH version, target profile (e.g. web, headless), Node.js version, and OS.
+      placeholder: DSH 0.1.0-rc.1, profile: web, Node 22.19, Windows 11
+    validations:
+      required: true

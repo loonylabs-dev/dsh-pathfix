@@ -1,0 +1,9 @@
+# dsh-pathfix bundle patch
+#
+# Inserts the dsh-pathfix plugin at the host layer.
+# Automatically loaded when the bundle is installed via:
+#   dsh plugin --profile <name> add file:/.../dsh-pathfix
+
+- insert:
+    - id: pathfix
+      name: 'dsh-pathfix'
